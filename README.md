@@ -10,7 +10,14 @@ With the code in your computer you should start the EYE.py python script
 It will ask you for a full path of a video of your choice and , what duration you expect it to have. After a while, depending on how long you chosed the video duration and the peformance of your computer, the task will be donde and you will be able to pick up your video named as outpy.mp4 in the same directory of the EYE.py python script.
 
 # Note:
-This program consumes about 1GB RAM
+<ul>
+<li>
+ This program consumes about 1GB RAM 
+</li>
+<li>
+ Yolo weights are required. Proved and recomended weights are yolov8x.pt and yolov8n.pt <a href"https://github.com/ultralytics/ultralytics">https://github.com/ultralytics/ultralytics</a>  
+</li>
+</ul>
 
 # Dependencies:
 If you already have python installed and pip then you can run the next commands to get your project up to the task:
