@@ -11,6 +11,7 @@ It will ask you for a full path of a video of your choice and , what duration yo
 
 # Note:
 This program consumes about 1GB RAM
+You must download the weights for the Yolo model which are yolov8x-seg.pt and yolov8x.pt (<strong> Recomended</strong>). You can do so at <a href="https://github.com/ultralytics/ultralytics"> https://github.com/ultralytics/ultralytics </a>
 
 # Dependencies:
 If you already have python installed and pip then you can run the next commands to get your project up to the task:
