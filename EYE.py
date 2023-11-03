@@ -61,7 +61,7 @@ def status(state,num_frames,actual_frame,start_timer):
 # -----------------------------------------------------------------------------
 
 
-def main_loop(num_frames):
+def main_loop(num_frames,model_path):
 
   # ---------------------------------------------------------
   # --------------LOAD-TARGET--------------------------------
@@ -90,7 +90,7 @@ def main_loop(num_frames):
   # Load a model
   print(YELLOW+"loading model...".upper())
 
-  model = YOLO('A:\\COLLEGE\\Computing_Science\\3rd year\\Segundo semestre\\Computation View\\OptativoCV\\ModelsWeights\\YOLOv8\\yolov8x.pt')  # pretrained YOLOv8n model
+  model = YOLO(model_path)  # pretrained YOLOv8n model
 
   print(GREEN+"model loaded.".upper())
 
@@ -156,10 +156,10 @@ def main_loop(num_frames):
 
 
 # build n-second video
-num_frames= n_seconds_video_record()
+num_frames,model_path= n_seconds_video_record()
 
 # start program
-main_loop(num_frames)
+main_loop(num_frames,model_path)
 
 # clean console
 os.system("cls")
@@ -167,4 +167,3 @@ os.system("cls")
 # delete video target 
 os.remove("target.mp4")
 
-# A:\story of mine\uni\20211103_084128.mp4

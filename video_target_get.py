@@ -32,6 +32,9 @@ def n_seconds_video_record():
     print(PURPLE+ "provide seconds: ".upper())
     seconds= (int)(input())
 
+    print(PURPLE+ "provide model path: ".upper())
+    model_path=input()
+
     #catch video
     cap = cv2.VideoCapture(video_path)
 
@@ -74,5 +77,5 @@ def n_seconds_video_record():
     #clear console
     os.system("cls")
 
-    return num_frames
+    return num_frames,model_path
     # ---------------------------------------------------------
